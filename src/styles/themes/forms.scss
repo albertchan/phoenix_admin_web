@@ -1,0 +1,128 @@
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $color-placeholder;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: $color-placeholder;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: $color-placeholder;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+  color: $color-placeholder;
+}
+
+form .help-text {
+  color: $palette-grey-600;
+
+  &.has-error {
+    color: $color-danger;
+  }
+
+  &.info {
+    color: $color-info;
+  }
+}
+
+.form-group {
+  position: relative;
+  font-size: $input-text-font-size;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: $input-text-vertical-spacing 0;
+
+  label {
+    color: $input-text-label-color;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  &.floating-label label {
+    position: absolute;
+    top: 24px;
+    color: $input-text-label-color;
+    font-size: 16px;
+    font-weight: inherit;
+    pointer-events: none;
+    will-change: left, top, contents;
+    transition: 0.2s ease all;
+  }
+
+  &.active label {
+    color: $input-text-highlight-color;
+  }
+
+  &.floating-label.active label,
+  &.floating-label.dirty label {
+    top: 4px;
+    font-size: 12px;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+.form-group .form-control {
+  display: block;
+  margin: 0;
+  padding: $input-text-padding 0;
+  width: 100%;
+
+  // background-color: rgba(0,0,0,0) !important;
+  background-image: linear-gradient($color-primary, $color-primary), linear-gradient($input-text-bottom-border-color, $input-text-bottom-border-color) !important;
+  background-position: center bottom, center calc(100% - 1px) !important;
+  background-repeat: no-repeat;
+  background-size: 0 2px, 100% 1px;
+  border: none;
+  border-radius: 0;
+  // box-shadow: none;
+  color: inherit;
+  font-size: $input-text-font-size;
+  text-align: left;
+  transition: background 0s ease-out;
+
+  &:focus {
+    background-image: $color-primary;
+    background-size: 100% 2px, 100% 1px;
+    box-shadow: none;
+    outline: none;
+  }
+
+  &.animate:focus {
+    background-image: linear-gradient($color-primary, $color-primary), linear-gradient($input-text-bottom-border-color, $input-text-bottom-border-color);
+    transition-duration: 0.2s;
+
+    .is-invalid & {
+      background-image: linear-gradient($color-primary, $color-primary), linear-gradient($input-text-bottom-border-color, $input-text-bottom-border-color);
+    }
+  }
+}
+
+.form-group {
+  position: relative;
+
+  .help-text {
+    &.has-error {
+      color: $color-danger;
+      font-size: 12px;
+    }
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+
+  &.has-error {
+    border-color: $color-danger;
+  }
+}

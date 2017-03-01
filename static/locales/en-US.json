@@ -1,0 +1,113 @@
+{
+  "action": {
+    "add-group": "Add Group",
+    "add-user": "Add User",
+    "cancel": "Cancel",
+    "go-back": "Go Back",
+    "log-out": "Log Out",
+    "register": "Register",
+    "save": "Save",
+    "save-changes": "Save Changes",
+    "search": "Search",
+    "update": "Update"
+  },
+
+  "errors": {
+    "errors-found": "Errors found",
+    "invalid-email-password": "Invalid email or password",
+    "not-verified": "Email not verified"
+  },
+
+  "label": {
+    "help": "Help"
+  },
+
+  "menu-drawer": {
+    "title": "Menu"
+  },
+
+  "nav": {
+    "add-user": "Add User",
+    "dashboard": "Dashboard",
+    "home": "Home",
+    "groups": "Groups",
+    "login": "Login",
+    "register": "Register",
+    "show-user": "User Detail",
+    "users": "Users"
+  },
+
+  "user-menu": {
+    "profile": "Profile",
+    "logout": "Log out"
+  },
+
+  "dashboard": {
+    "title": "Get started!"
+  },
+
+  "groups": {
+    "title": "Groups"
+  },
+
+  "login": {
+    "title": "Login"
+  },
+
+  "recover-password": {
+    "title": "Recover Password",
+    "try-again": "Try Again",
+    "send-reset-link": "Send Reset Link"
+  },
+
+  "register": {
+    "title": "Register"
+  },
+
+  "resend-verification": {
+    "title": "Resend Verification",
+    "try-again": "Try Again",
+    "send-verification-link": "Send Verification Link"
+  },
+
+  "verify": {
+    "title": "Email Verified",
+    "title-expired": "Link Expired",
+    "goto-login": "Go To Login",
+    "resend-verification-link": "Resend Verification Link"
+  },
+
+  "add-user": {
+    "title": "Add User",
+    "avatar": "Avatar",
+    "help": "Help",
+    "user-info": "Enter the following fields to create a new user"
+  },
+
+  "user": {
+    "email": "Email",
+    "last-login": "Last login",
+    "name": "Name",
+    "password": "Password",
+    "password-confirmation": "Confirm Password",
+    "reset-sent-at": "Reset password sent on",
+    "verified-at": "Verified on",
+    "verification-sent-at": "Verification sent on"
+  },
+
+  "users": {
+    "title": "Users",
+    "list-header": {
+      "email": "Email",
+      "name": "Name",
+      "verified": "Verified"
+    },
+    "meta-top": "{totalEntries} users"
+  },
+
+  "show-user": {
+    "title": "User Information",
+    "help": "Help",
+    "update-info": "Click save after updating info"
+  }
+}

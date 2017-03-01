@@ -1,0 +1,20 @@
+.list {
+  .list-header {
+    padding: 8px 0;
+    color: $palette-grey-800;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+    background-color: #fff;
+  }
+
+  .list-item:nth-child(even) {
+    background-color: $palette-grey-200;
+  }
+}

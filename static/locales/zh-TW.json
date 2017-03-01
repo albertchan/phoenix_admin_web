@@ -1,0 +1,55 @@
+{
+  "action": {
+    "add-group": "添加用户組",
+    "add-user": "添加用户",
+    "cancel": "取消",
+    "save": "保存",
+    "search": "搜尋"
+  },
+
+  "menu-drawer": {
+    "label": {
+      "filters": "過濾",
+      "language": "語言"
+    }
+  },
+
+  "nav": {
+    "home": "主頁",
+    "dashboard": "儀表板",
+    "groups": "用戶組",
+    "users": "用戶",
+    "register": "註冊",
+    "login": "登錄"
+  },
+
+  "user-menu": {
+    "profile": "用戶資料",
+    "logout": "登出"
+  },
+
+  "dashboard": {
+    "title": "儀表板"
+  },
+
+  "groups": {
+    "title": "用戶組"
+  },
+
+  "users": {
+    "title": "用戶",
+    "item-header": {
+      "email": "電郵地址",
+      "name": "姓名",
+      "verified": "已驗證"
+    },
+    "meta-top": "{totalEntries}個用户"
+  },
+
+  "add-user": {
+    "title": "添加用户",
+    "avatar": "Avatar",
+    "help": "幫助",
+    "user-info": "帳戶資料"
+  }
+}

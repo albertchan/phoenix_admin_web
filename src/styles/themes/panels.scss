@@ -1,0 +1,79 @@
+.panel {
+  border-radius: 0;
+}
+
+.auth-panel {
+  min-width: 320px;
+  max-width: 400px;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,0.137255) 0px 24px 38px 3px,
+              rgba(0,0,0,0.117647) 0px 9px 46px 8px,
+              rgba(0,0,0,0.2) 0px 11px 15px -7px;
+
+  form > div {
+    padding: 16px;
+  }
+
+  .panel-header {
+    position: relative;
+    display: flex;
+    height: 128px;
+    // background-color: $color-brand;
+    border-bottom: 1px solid #f0f0f0;
+    color: $color-text;
+    // color: #fff;
+
+    .panel-header-wrapper {
+      align-self: flex-end;
+    }
+
+    .panel-header-title {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .panel-header-supporting-text {
+      color: $color-text-light;
+    }
+
+    .panel-header-menu {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  .panel-body {
+    padding-top: 32px;
+  }
+
+  .panel-body-info {
+    margin-bottom: 16px;
+    color: #757575;
+  }
+
+  .panel-footer {
+    background-color: transparent;
+    border-radius: 0;
+    border-top: 0;
+    // border-top: 1px solid #f0f0f0;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .form-group {
+    margin-bottom: 4px;
+  }
+}
+
+.user-panel {
+  margin: 16px 0;
+  @include shadow-4dp();
+
+  .form-action {
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,46 @@
+// Color palettes
+$palette-indigo-500: #3f51b5;
+$palette-grey-50: #fafafa;
+$palette-grey-200: #eeeeee;
+$palette-grey-300: #e0e0e0;
+$palette-grey-400: #bdbdbd;
+$palette-grey-500: #9e9e9e;
+$palette-grey-600: #757575;
+$palette-grey-800: #424242;
+$palette-grey-900: #212121;
+$palette-pink-A200: #ff4081;
+$palette-red-A700: #d50000;
+
+// Brand colors
+$color-black: #000;
+$color-brand: #DA5A47;
+$color-accent: #ff5252;
+$color-primary: #F67938;
+$color-danger: #d50000;
+$color-info: #2196f3;
+
+// Inputs
+$input-text-background-color: transparent !default;
+$input-text-label-color: rgba($color-black, 0.26) !default;
+$input-text-bottom-border-color: rgba($color-black, 0.12) !default;
+$input-text-highlight-color: $color-primary !default;
+$input-text-disabled-color: $input-text-bottom-border-color !default;
+$input-text-disabled-text-color: $input-text-label-color !default;
+$input-text-error-color: $palette-red-A700 !default;
+
+// Layout colors
+$color-light-contrast: $color-black;
+$color-border: rgba(0,0,0,.4);
+$color-border-light: rgba(0,0,0,.14);
+$color-header: #616161;
+$color-placeholder: rgba(0,0,0,.14);
+// $color-text: rgba(0,0,0,.87); /* #1f1f1f */
+$color-text: $palette-grey-900;
+$color-text-light: rgba(0,0,0,0.54);
+$color-link: $color-brand;
+$color-dimmed: rgba(0,0,0,.14);
+
+// Component colors
+$color-nav-border: rgba(0,0,0,.14);
+$color-nav-link: rgba(0,0,0,.54);
+$color-panel-label: $color-nav-link;

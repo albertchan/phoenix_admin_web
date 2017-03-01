@@ -1,0 +1,15 @@
+export const app = {
+  TOGGLE_DRAWER: 'TOGGLE_DRAWER',
+};
+
+export const auth = {
+  LOGIN: 'AUTH_LOGIN',
+  LOGOUT: 'AUTH_LOGOUT',
+  AUTHENTICATE: 'AUTH_AUTHENTICATE_USER',
+};
+
+export const users = {
+  RECEIVE_ALL: 'USER_RECEIVE_ALL',
+  RECEIVE_ITEM: 'USER_RECEIVE_ITEM',
+  RECEIVE_PAGE: 'USER_RECEIVE_PAGE',
+};

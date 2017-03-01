@@ -1,0 +1,59 @@
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  transition-property: all;
+  transition-duration: $drawer-transition-duration;
+  transition-timing-function: $drawer-transition-timing-function;
+  @include shadow-8dp();
+
+  &.drawer-left.drawer-open {
+    position: absolute;
+    left: $drawer-width;
+    right: -$drawer-width;
+  }
+
+  section {
+    padding: 0;
+
+    &.bordered-top {
+      border-top: 1px solid transparent;
+    }
+  }
+}
+
+.page.admin {
+  background-color: rgba(0,0,0,.01);
+}
+
+.page.login,
+.page.register,
+.page.reset-password,
+.page.verify {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #adafb5;
+}
+
+.page-title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 54px;
+}
+
+.page-description {
+  margin-top: 12px;
+  margin-bottom: 32px;
+  color: $palette-grey-500;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}

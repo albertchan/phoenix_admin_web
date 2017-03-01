@@ -1,0 +1,123 @@
+.btn {
+  background-color: transparent;
+  border-radius: 2px;
+  color: #757575;
+  outline: 0;
+  text-transform: uppercase;
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1),
+              background-color .2s cubic-bezier(.4,0,.2,1),
+              color .2s cubic-bezier(.4,0,.2,1);
+
+  &:focus,
+  &:hover {
+    color: darken(#757575, 15%);
+    outline: 0 !important;
+  }
+
+  .material-icons {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+a.btn {
+  text-transform: none;
+}
+
+.btn-accent {
+  color: $color-accent;
+
+  &:hover {
+    color: darken($color-accent, $btn-hover-darken-value);
+  }
+
+  &.btn-colored {
+    background-color: $color-accent;
+    color: #fff;
+  }
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  border-color: transparent;
+  color: #fff;
+
+  &:focus,
+  &:hover {
+    background-color: darken($color-primary, $btn-hover-darken-value);
+    border-color: transparent;
+    color: #fff;
+  }
+}
+
+.btn-cta {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14px;
+}
+
+.btn-fab {
+  position: relative;
+  font-size: $button-fab-font-size;
+  height: $button-fab-size;
+  margin: auto;
+  min-width: $button-fab-size;
+  width: $button-fab-size;
+  padding: 0;
+  background: rgba(158,158,158,.2);
+  border-radius: 50%;
+  // box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+  line-height: normal;
+  overflow: hidden;
+  @include shadow-2dp();
+
+  &:hover {
+    @include shadow-4dp;
+  }
+
+  .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-12px,-12px);
+    transform: translate(-12px,-12px);
+    line-height: 24px;
+    width: 24px;
+  }
+}
+
+.btn-icon {
+  height: 32px;
+  width: 32px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  color: inherit;
+  font-size: 24px;
+  overflow: hidden;
+
+  .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px,-12px);
+    line-height: 24px;
+    width: 24px;
+  }
+
+  &:hover {
+    background-color: rgba(158,158,158,.2);
+    color: inherit;
+  }
+}
+
+.btn-outline-inverse {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+
+  &:hover {
+    color: inherit;
+  }
+}
